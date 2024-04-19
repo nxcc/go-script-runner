@@ -6,8 +6,11 @@ Build static `gsr` with dependencies compiled in:
 
      CGO_ENABLED=0 go build ./cmd/gsr
 
-
 Run scripts standalone, no go installation or dependencies required:
 
     ./gsr ./scripts/simple/
     ./gsr -run Resty ./scripts/simple/
+
+Install
+
+    go install github.com/nxcc/go-script-runner/cmd/gsr@latest
