@@ -1,4 +1,4 @@
-module ys
+module github.com/nxcc/go-script-runner
 
 go 1.22.0
 
