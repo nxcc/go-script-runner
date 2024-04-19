@@ -4,3 +4,4 @@ Experimental go script runner, based on [yaegi](https://github.com/traefik/yaegi
 
     go build ./cmd/gsr
     ./gsr ./scripts/simple/
+    ./gsr -run Resty ./scripts/simple/
