@@ -1,0 +1,45 @@
+# gsr < script.go
+stdin script.go
+exec gsr
+stdout 'ARGS: \[-\]'
+
+# gsr - < script.go
+stdin script.go
+exec gsr '-'
+stdout 'ARGS: \[-\]'
+
+# gsr script.go
+exec gsr script.go
+stdout 'ARGS: \[script.go\]'
+
+# gsr script.go a b c
+exec gsr script.go a b c
+stdout 'ARGS: \[script.go a b c\]'
+
+# gsr -run Main - a b c < script.go
+stdin script.go
+exec gsr -run Main - a b c
+stdout 'ARGS: \[- a b c\]'
+
+# gsr -run Main script.go a b c
+exec gsr -run Main script.go a b c
+stdout 'ARGS: \[script.go a b c\]'
+
+# gsr -run Main script.go
+exec gsr -run Main2 script.go
+stdout 'Main2'
+
+-- script.go --
+package gsr
+
+import "fmt"
+
+var ARGS []string
+
+func Main() {
+	fmt.Printf("ARGS: %+v\n", ARGS)
+}
+
+func Main2() {
+	fmt.Println("Main2")
+}
