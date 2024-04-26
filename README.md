@@ -8,8 +8,8 @@ Build static `gsr` with dependencies compiled in:
 
 Run scripts standalone, no go installation or dependencies required:
 
-    ./gsr ./scripts/simple/
-    ./gsr -run Resty ./scripts/simple/
+    ./gsr ./scripts/single/
+    ./gsr ./scripts/multi/
 
 Install
 

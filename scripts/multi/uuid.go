@@ -1,4 +1,4 @@
-package gsr
+package main
 
 import (
 	"fmt"
