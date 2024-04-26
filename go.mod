@@ -3,6 +3,7 @@ module github.com/nxcc/go-script-runner
 go 1.22.0
 
 require (
+	github.com/Masterminds/semver/v3 v3.2.1
 	github.com/bitfield/script v0.22.0
 	github.com/go-resty/resty/v2 v2.12.0
 	github.com/google/uuid v1.6.0
