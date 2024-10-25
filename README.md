@@ -2,7 +2,7 @@
 
 Experimental go script runner, based on [yaegi](https://github.com/traefik/yaegi).
 
-Build static `gsr` with dependencies compiled in:
+Build static `gsr` with some useful packages compiled in:
 
      CGO_ENABLED=0 go build ./cmd/gsr
 
